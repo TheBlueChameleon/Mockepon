@@ -6,8 +6,8 @@
 # Compiler setup
 
 CXX      = g++-10
-CXXFLAGS = -std=c++2a -O2 -Wextra -Wall -Wpedantic -Wimplicit-fallthrough -I $(LIBDIR)
-LDFLAGS  = -lm -lstdc++fs
+CXXFLAGS = -std=c++2a -O2 -Wextra -Wall -Wpedantic -Wimplicit-fallthrough -I $(LIBDIR) -L/usr/X11R6/lib
+LDFLAGS  = -lm -lstdc++fs -lX11 -lpthread
 
 LIBDIR = lib
 SRCDIR = src

@@ -1,5 +1,9 @@
 #include <iostream>
 
+#include "cImgConvenience.hpp"
+
+
+
 int main () {
-  std::cout << "foo bar" << std::endl;
+  return 0;
 }
